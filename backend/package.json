@@ -5,16 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js || node index.js"
+    "start": "nodemon index.js || node index.js",
+    "testCronJob": "node src/common/scheduler/exam-cron-job.js",
+    "testIndex": "node index.js",
+    "testAdminController": "node src/api/administrator/adminController.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
+    "cloudinary": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.4"
+    "mongoose": "^8.4.4",
+    "node-cron": "^3.0.3"
   }
 }
